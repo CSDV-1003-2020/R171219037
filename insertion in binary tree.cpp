@@ -55,7 +55,7 @@ struct Node* insert(struct Node* node, int key)
 } 
 
 
-//driver program
+/*driver program
 int main()
 {
 struct Node *root= NULL;
@@ -68,7 +68,7 @@ insert(root, 60);
 insert(root, 80);
 return 0;
 }
- Output
+Output
  Node : 20, Parent : 30 
  Node : 30, Parent : 50 
  Node : 40, Parent : 30 
@@ -76,3 +76,4 @@ return 0;
  Node : 60, Parent : 70 
  Node : 70, Parent : 50 
  Node : 80, Parent : 70
+*/
