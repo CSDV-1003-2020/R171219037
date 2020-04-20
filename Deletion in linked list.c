@@ -26,3 +26,26 @@ del (struct node *before_del)
     before_del->next = temp->next;
     free(temp);
 }
+int main()
+{
+    struct node *prev,*head, *p;
+    int n,i;
+    printf ("number of elements:");
+    scanf("%d",&n);
+    head=NULL;
+    for(i=0;i<n;i++)
+    {
+        p=malloc(sizeof(struct node));
+        scanf("%d",&p->data);
+        p->next=NULL;
+        if(head==NULL)
+            head=p;
+        else
+            prev->next=p;
+        prev=p;
+    }
+    /node to be deleted is head->next->next/
+    del(head->next);
+    display(head);
+    return 0;
+}
