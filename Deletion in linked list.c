@@ -19,3 +19,10 @@ display(struct node *head)
         display(head->next);
     }
 }
+del (struct node *before_del)
+{
+    struct node *temp;
+    temp = before_del->next;
+    before_del->next = temp->next;
+    free(temp);
+}
