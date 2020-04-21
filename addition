@@ -11,6 +11,7 @@ int main()
 {
     struct node *prev,*head,*p;
     int n,i;
+    printf("Hello World");
     printf ("number of elements:");
     scanf("%d",&n);
     head=NULL;
@@ -27,3 +28,4 @@ int main()
     }
     return 0;
 }
+
